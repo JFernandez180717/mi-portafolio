@@ -1,0 +1,25 @@
+body {
+    font-size: 10px;
+    background-color: #0f1014;
+}
+
+.navbar {
+    font-size: 1rem;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.navbar ul li:hover{
+    color: #356e8b;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.393);
+    cursor: pointer;
+}
