@@ -43,7 +43,6 @@ header {
     color: #356e8b;
     text-shadow: 0 0 3px rgba(255, 255, 255, 0.393);
     cursor: pointer;
-    transform: scale(8);
 }
 
 .main {
@@ -111,6 +110,8 @@ header {
     border-radius: 8%;
     color: #356e8b;
     cursor: pointer;
+    scale: 1.1;
+    box-shadow: 0 0 2px white;
 }
 
 .projects {
@@ -122,18 +123,24 @@ header {
 
 .container-projects {
     display: grid;
-    max-width: 800px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 900px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
     margin: 0 auto;
-    gap: 16px;
+    gap: 20px;
 }
 
 .project-card {
-    border: 1px solid white;
+    border: 1px solid #356e8b;
     border-radius: 5px;
-    box-shadow: inset;
-    width: 200px;
     height: auto;
+    padding: 0 10px;
+    transition: all 300ms ease;
+}
+
+.project-card:hover {
+    scale: 1.1;
+    box-shadow: 0 0 2px white;
 }
 
 .footer {
