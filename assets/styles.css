@@ -51,7 +51,7 @@ header {
 }
 
 .menu_bars {
-    /* display: none; */
+    display: none;
 }
 
 .menu_bars:checked + .ul_links{
@@ -61,6 +61,7 @@ header {
 
 .list-icon{
     cursor: pointer;
+    padding-left: 20px;
 }
 
 .navbar ul li{
@@ -85,7 +86,6 @@ header {
     box-sizing: border-box;
     width: 100%;
     height: 83%;
-    background-image: url(./img/background_main.jpg);
     background: linear-gradient(rgba(15, 16, 20, 0.85) 90%, rgba(15, 16, 20, 1)), url(./img/background_main.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -96,27 +96,42 @@ header {
     align-items: center;
     font-size: 1.5rem;
     /* padding: 0; */
-    padding-left: 100px;
+    padding-left: 80px;
     color: rgb(184, 184, 184);
 }
 
 .aboutme {
-    width: 90%;
-    height: 83%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-center;
     align-items: center;
     font-size: 1.2rem;
     padding: 0;
-    padding-left: 100px;
+    padding-left: 20px;
     color: rgb(184, 184, 184);
+}
+
+.aboutme__subtitle {
+    font-size: 25px;
+}
+
+.aboutme__description {
+    font-size: 15px;
 }
 
 .container__title {
     font-weight: bold;
     margin: 0;
 }
+
+
+/*background: linear-gradient(rgba(15, 16, 20, 0.85) 90%, rgba(15, 16, 20, 1)), url(./img/photo.jpg);
+background-size: cover;
+background-repeat: no-repeat;*/
 
 .container__subtitle {
     font-size: 1rem;
